@@ -1,8 +1,8 @@
-//
-//  note_model.swift
-//  SwiftMobile
-//
-//  Created by Mihail_Ch on 17.08.2024.
-//
-
 import Foundation
+
+struct Note: Identifiable,Codable {
+    var id = UUID()
+    var title: String
+    var content: String
+    var date: Date
+}

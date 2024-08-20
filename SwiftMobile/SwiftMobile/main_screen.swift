@@ -37,6 +37,24 @@ struct MainScreen: View {
                             .background(Color.blue)
                             .cornerRadius(10)
                     }
+                    NavigationLink(destination: TaskListView()) {
+                        Text("Task")
+                            .font(.title)
+                            .padding()
+                            .foregroundColor(.white)
+                            .frame(width: 200, height: 50)
+                            .background(Color.blue)
+                            .cornerRadius(10)
+                    }
+                    NavigationLink(destination:NotesView()) {
+                        Text("Note")
+                            .font(.title)
+                            .padding()
+                            .foregroundColor(.white)
+                            .frame(width: 200, height: 50)
+                            .background(Color.blue)
+                            .cornerRadius(10)
+                    }
                 }
                 
                 Spacer()
